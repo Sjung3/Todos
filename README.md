@@ -1,10 +1,10 @@
-#TODOS -Part of a backend course
+# TODOS -Part of a backend course
 
 A task tracking app.
 
 The project’s aim was to build a backend to a frontend that I had built in a previous course. The frontend part is far from lean in its code, but it does what it should be doing. 
 
-##Technologies
+## Technologies
 Java 13<br>
 Spring 2.2.5<br>
 Maven<br>
@@ -12,14 +12,14 @@ Tomcat<br>
 MySQL<br>
 JavaScript
 
-##Status
+## Status
 Backend -in progress  
 Need to add try/catch or @Security to handle exceptions.
 
 Frontend -in progress  
 Improve the code, needs to be leaner.
 
-##Sources
+## Sources
 The backend of the app is built through reading chapter three of the book “Building applications with Spring 5 and Vue.js 2” by James J. Ye, Packt. 
 
 The frontend is inspired by the todoMVC.com layout and functions. 
@@ -31,7 +31,7 @@ https://www.baeldung.com
 www.alligator.io/
 www.zetcode.com/ 
 
-##Information aimed at my teacher Klas Jönsson.
+## Information aimed at my teacher Klas Jönsson.
 
 IDE used for this project is IntelliJ. That is the IDE I used the most. Continued using it for convenience since I know what feature to use, short keyboard short cuts, where to find properties, setting etc. and more. 
 
