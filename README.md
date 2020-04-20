@@ -5,18 +5,18 @@ A task tracking app.
 The project’s aim was to build a backend to a frontend that I had built in a previous course. The frontend part is far from lean in its code, but it does what it should be doing. 
 
 ##Technologies
-Java 13
-Spring 2.2.5
-Maven 
-Tomcat
-MySQL 
+Java 13<br>
+Spring 2.2.5<br>
+Maven<br>
+Tomcat<br>
+MySQL<br>
 JavaScript
 
 ##Status
-Backend -in progress
+Backend -in progress  
 Need to add try/catch or @Security to handle exceptions.
 
-Frontend -in progress
+Frontend -in progress  
 Improve the code, needs to be leaner.
 
 ##Sources
@@ -39,7 +39,7 @@ Reason for choosing Hibernate to connect with the database is since it seems to 
 
 My frontend was already built in JavaScript therefor I kept it in JavaScript but adapted it so it would connect to the backend.
 
-I choose to build the project without any testing since I need a bit more practice on this. We didn’t touch the subject about exception handling in backend much during the course, i.e. should the exception message be in a log or should it be visible in the UI, should it be try/catch or @Security annotation, what is best practice etc. Therefor it is now on my ‘To read more about’-list.
+I choose to build the project without any testing since I need a bit more practice on this. We didn’t touch the subject about exception handling in backend much during the course, i.e. should the exception message be in a log or should it be visible in the UI, should it be try/catch or @Security annotation, what is best practice etc. Therefore it is now on my ‘To read more about’-list.
 
 
 
