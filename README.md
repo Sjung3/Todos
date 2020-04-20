@@ -24,11 +24,11 @@ The backend of the app is built through reading chapter three of the book “Bui
 
 The frontend is inspired by the todoMVC.com layout and functions. 
 
-Frequently visited sites during built.
-www.stackoverflow.com
-https://www.w3schools.com
-https://www.baeldung.com
-www.alligator.io/
+Frequently visited sites during built.<br>
+www.stackoverflow.com<br>
+https://www.w3schools.com<br>
+https://www.baeldung.com<br>
+www.alligator.io/<br>
 www.zetcode.com/ 
 
 ## Information aimed at my teacher Klas Jönsson.
