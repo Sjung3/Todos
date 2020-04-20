@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Backbone.js . TodoMVC</title>
+    <link rel='icon' href='./css/favicon.ico' type='image/x-icon'/> >
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/todoscript.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>todos</h1>
+    </header>
+<div id="container">
+    <div id="display">
+        <label class="replace-check-box">
+            <input type="checkbox" class="check-uncheck"> 
+            <img src="./css/checkUncheck.png">
+        </label>
+       <input type="text" id="display-input" placeholder="What needs to be done?"> 
+    
+    </div>
+   
+    <ul id="to-do-list">
+    </ul>
+
+    <footer class="footer">
+        <span  id="items"> </span>
+        <label for="all">All<input type="radio" id="all" name="control"></label>
+        <label for="active">Active<input type="radio" id="active" name="control"></label>
+         <label for="completed">Completed<input type="radio" id="completed" name="control"></label>
+        <span class="clear-all">Clear completed</span>
+    </footer>
+</div>
+
+    <footer class="lastFooter">
+        <ul>
+            <li>Double-click to edit a todo</li>
+            <li>bla bla bla</li>
+            <li>Part of Susan's backend course</li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
