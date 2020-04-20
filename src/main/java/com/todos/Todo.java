@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Table(name = "todos")
 public class Todo {
     @Id
-//Primary key value is generated automatically
+    //Primary key value is generated automatically
     //IDENTITY = auto-incremented
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

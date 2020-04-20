@@ -32,9 +32,9 @@ public class TodoController {
     @GetMapping("/api/todos")
     @ResponseBody
     public ResponseEntity<List<Todo>> getTodos() {
-        List<Todo> todos = todoService.getTodos();
-        //todos are returned to the js create method
-        return ResponseEntity.ok(todos);
+            List<Todo> todos = todoService.getTodos();
+            //todos are returned to the js create method
+            return ResponseEntity.ok(todos);
     }
 
 
