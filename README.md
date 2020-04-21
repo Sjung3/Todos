@@ -22,7 +22,7 @@ Improve the code, needs to be leaner.
 ## Sources
 The backend of the app is built through reading chapter three of the book “Building applications with Spring 5 and Vue.js 2” by James J. Ye, Packt. 
 
-The frontend is inspired by the todoMVC.com layout and functions. 
+The frontend is inspired by the www.todoMVC.com layout and functions. 
 
 Frequently visited sites during built.<br>
 www.stackoverflow.com<br>
