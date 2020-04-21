@@ -2,21 +2,21 @@ package com.todos;
 
 import javax.persistence.*;
 
-//The class represents a table in the list_todos database
+//The class represents a table in the DB
 @Entity
-//Specifies the todos table that the Todo class is mapped to
+//Specifies the table that the class is mapped to
 @Table(name = "todos")
 public class Todo {
-    @Id
     //Primary key value is generated automatically
     //IDENTITY = auto-incremented
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
     @Column(name = "input", nullable = false, length = 300)
     private String input;
 
-    //This constructor creates the objects after Hibernate has retrieved the todo records from the database
+    //Creates the objects after Hibernate has retrieved the records from the database
     public Todo() {
     }
 

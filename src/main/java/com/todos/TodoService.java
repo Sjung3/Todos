@@ -14,24 +14,23 @@ public class TodoService {
         this.repository = repository;
     }
 
-    //Creates a transaction for getting all todo records that is retrieved in the TodoRepository getTodos method
+    //Creates a transaction for getting all the records that is retrieved in the TodoRepository getTodos method
     //Transaction = all or nothing
+    //Retrieves all todos and returns response from the TodoRepository method
     @Transactional(readOnly = true)
     public List<Todo> getTodos() {
-        //Retrieves all todos
         return repository.getTodo();
     }
 
-    @Transactional
     //Parameter originates from method in TodoController.
+    @Transactional
     public Todo save(String input) {
-        //saveTodo method in TodoRepository is called and a new Todo object is passed
         return repository.saveTodo(new Todo(input));
     }
 
+    //deleteTodo method (delete in database) is called and the id object to be deleted is passed
     @Transactional
     public void deleteTodo(String id) {
-        //deleteTodo method (delete in database) is called and the id object to be deleted is passed
         repository.deleteTodo(id);
     }
 }

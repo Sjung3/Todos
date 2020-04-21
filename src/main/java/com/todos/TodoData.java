@@ -1,6 +1,6 @@
 package com.todos;
 
-//The API's request data is defines in this class
+//The API's request data is defined in this class
 public class TodoData {
     private String input;
 

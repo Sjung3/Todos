@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 //The MVC controller class of the App
-//Handles all todo requests
+//Handles all DB requests
 
-@Controller
 //Maps the Controller to handle requests that match specific URI-pattern "/todos", "/api/todos/delete" etc
+@Controller
 public class TodoController {
     //Instance of TodoService is injected
     private TodoService todoService;
@@ -21,7 +21,7 @@ public class TodoController {
         this.todoService = todoService;
     }
 
-    //Handles the todosHTML file so the user interface is rendered
+    //Renders the UI
     @GetMapping("/todos")
     public String todosHTML() {
         return "todosHTML";
@@ -29,29 +29,28 @@ public class TodoController {
 
 
     //TodoService.getTodos is invoked to retrieve all the todos
+    //objects are returned to the JS create method
     @GetMapping("/api/todos")
     @ResponseBody
     public ResponseEntity<List<Todo>> getTodos() {
             List<Todo> todos = todoService.getTodos();
-            //todos are returned to the js create method
             return ResponseEntity.ok(todos);
     }
 
-
-    @PostMapping("/api/todos")
     //The parameter is passed from the js saveTodo method using @RequestBody
     //@RequestBody converts the JSON formated String passed in the HTTP request body to an instance of todoData
+    //Input field is passed to TodoService
+    //The saved object is returned to the JS addTodo method
+    @PostMapping("/api/todos")
     public ResponseEntity<Todo> saveTodo(@RequestBody TodoData data) {
-        //Input field is passed to TodoService
         Todo saved = todoService.save(data.getInput());
-        //The saved todo is returned to the js addTodo method
         return ResponseEntity.ok(saved);
     }
 
+    //deleteTodo method is called and the object from JS is passed in to the method
     @PostMapping("/api/todos/delete")
     @ResponseBody
     public void deleteTodo(@RequestBody TodoData data) {
-        //deleteTodo method is called and the object from js is passed in to the method
         todoService.deleteTodo(data.getInput());
     }
 }

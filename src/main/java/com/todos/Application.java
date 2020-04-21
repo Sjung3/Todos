@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-//Where the application starts (the entry point)
+//Application starting point (the entry point)
 public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);

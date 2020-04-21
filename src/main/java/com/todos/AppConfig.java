@@ -22,13 +22,13 @@ public class AppConfig {
     }
 
     //Session = main interface for storing/retrieving entities
+    //Instance of SessionFactory is created
+    //Injection of datasource
+    //Specifies which package Hibernate should scan in order to find entity classes
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
-        //Instance of SessionFactory is created
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        //Injection of datasource
         sessionFactoryBean.setDataSource(dataSource);
-        //Specifies which package Hibernate should scan in order to find entity classes
         sessionFactoryBean.setPackagesToScan("com.todos");
         return sessionFactoryBean;
     }
