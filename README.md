@@ -2,11 +2,12 @@
 Exam project in Java backend course @Teknikhögskolan. 
 Created April 2020.
 
-## Criterias for exam
+## Criterias for exam project
 Build a backend to a frontend that I had built in a previous course. 
 
 ## Functionalities
 An app to be used as a todo list.
+Todos saved in database.
 
 ## Technologies
 Java 13<br>
