@@ -1,8 +1,12 @@
-# TODOS -Part of a backend course
+# TODOS 
+Exam project in Java backend course @Teknikhögskolan. 
+Created April 2020.
 
-A task tracking app.
+## Criterias for exam
+Build a backend to a frontend that I had built in a previous course. 
 
-The project’s aim was to build a backend to a frontend that I had built in a previous course. The frontend part is far from lean in its code, but it does what it should be doing. 
+## Functionalities
+An app to be used as a todo list.
 
 ## Technologies
 Java 13<br>
@@ -42,6 +46,3 @@ My frontend was already built in JavaScript therefor I kept it in JavaScript but
 I choose to build the project without any testing since I need a bit more practice on this. We didn’t touch the subject about exception handling in backend much during the course, i.e. should the exception message be in a log or should it be visible in the UI, should it be try/catch or @Security annotation, what is best practice etc. Therefore it is now on my ‘To read more about’-list.
 
 There are no commits made during the work of the project. I started the project before I found out we had to use git and that the commits was part of the project. Git was something else that I needed more knowledge of before I got started. I was to eager though to get the project done before I stopped and learned how to use Git. 
-
-
-
